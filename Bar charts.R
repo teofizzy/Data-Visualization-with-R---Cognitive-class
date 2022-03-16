@@ -14,6 +14,7 @@ qplot(
     geom = "bar",
     fill = I("blue"),
     xlab = "cylinders",
-    ylab = "Number of vehicles"
+    ylab = "Number of vehicles",
+    main = "cylinders in mtcars"
     
 )
