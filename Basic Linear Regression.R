@@ -5,6 +5,7 @@ install.packages("ggpubr")
 install.packages("broom")
 summary(income.data)
 summary(heart.data)
+library(ggpubr)
 
 ###### Simple Linear Reg Prerequisites
 
@@ -143,3 +144,4 @@ heart.plot <-
          x = "Biking to work (% of population)",
          y = "Heart disease (% of population)",
          color = "Smoking \n (% of population)")
+heart.plot
