@@ -35,7 +35,10 @@ tail(EuStockMarkets_df)
 ## The x = c(1:nrow()) simply specifies the current row number
 ggplot(EuStockMarkets_df, aes( x= c(1:nrow(EuStockMarkets_df)), y = DAX)) + geom_line()
 ## You can change the width of the line by adjusting the width parameter
-line_plot_1<-ggplot(EuStockMarkets_df, aes( x= c(1:nrow(EuStockMarkets_df)), y = DAX)) + geom_line(size = 1.5, colour = "light blue") + labs(x= "time", y= "stocks")
+line_plot_1<-ggplot(EuStockMarkets_df, aes( x= c(1:nrow(EuStockMarkets_df)),
+                                            y = DAX)) + 
+    geom_line(size = 1.5, colour = "light blue")+
+    labs(x= "time", y= "stocks")
 ##you can plot more lines to the graph, by adding more 'geom_lines'
 DAX_SMI_Plot<- ggplot()+
     geom_line(data = EuStockMarkets_df, aes(x=c(1:nrow(EuStockMarkets_df)), 

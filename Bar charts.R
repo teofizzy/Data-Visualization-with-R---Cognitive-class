@@ -64,6 +64,7 @@ print(barp)
 ##||way we want them.
 barp1<- ggplot(mtcars, aes(x=1, y = sort('carb'), fill = sort('carb')))+ 
     geom_bar(stat = "identity")
+barp1
 barp<-barp + coord_polar(theta = 'y')
 print(barp)
 ##The theta function helps prevent the warping of the axes during transformation.
