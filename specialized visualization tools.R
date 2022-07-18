@@ -18,6 +18,8 @@ require(scales)
 require(dplyr)
 library(devtools)
 devtools::install_github("ricardo-bion/ggradar")
+install.packages("installr")
+
 mtcars
 mtcars%>% # the expression after mtcars is the pipe operator
 add_rownames(var="group")%>%    
@@ -26,3 +28,4 @@ head(3)%>%select(1:10)->mtcars_radar # select which data to plot
 # this code will generate lots of warnings, to supress them
 options(warn=-1)
 ggradar(mtcars_radar)
+sessionInfo()
